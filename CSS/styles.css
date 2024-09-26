@@ -61,3 +61,10 @@
   margin-right: 2.5rem;
   line-height: 1.25rem;
 }
+.hero-header{
+  color: var(--white);
+  font-size: 1.75rem;
+}
+.navbar-toggler{
+
+}
