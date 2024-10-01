@@ -65,3 +65,30 @@
   color: var(--white);
   font-size: var(--size-28);
 }
+section{
+  padding: var(--size-150) 0;
+}
+.why-me-wrapper{
+  display: flex;
+  align-items: center;
+}
+.why-me-wrapper div{
+  flex: 1;
+}
+.block-text{
+  padding-right: var(--size-50);
+}
+.block-text span{
+  color: var(--font-color-dark);
+  font-weight: 300;
+}
+.block-text h2{
+  font-size: var(--size-40);
+  font-family: "Hinds", sans-serif;
+  font-weight: 600;
+  color: var(--font-color-dark);
+  margin-bottom: var(--size-20);
+  line-height: 1.3;
+  margin-top: .5rem;
+}
+
