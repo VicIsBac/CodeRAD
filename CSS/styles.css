@@ -91,4 +91,34 @@ section{
   line-height: 1.3;
   margin-top: .5rem;
 }
+.bg-contrast{
+  background-color: var(--contrast);
+  padding: var(--size-150) 0;
+}
+.service-card{
+  padding: var(--size-30);
+  box-shadow: 0 0 10px rgba(48, 63, 100, 0.15);
+  background-color: white;
+  border-radius: 8px;
+}
+.service-card span{
+  width: 4.375rem;
+  height: 4.375rem;
+  display: block;
+  float: left;
+  margin-right: 15px;
+  border-radius: 50%;
+  background-color: var(--font-color-light);
+}
+span.bg-color-1{background-image: linear-gradient(90deg, #9ccdfe 0%, #94aafd 100%);}
+span.bg-color-2{background-image: linear-gradient(90deg, #55edc0 0%, #4bdbdb 100%);}
+span.bg-color-3{background-image: linear-gradient(90deg, #fda498 0%, #f58b9e 100%);}
+span.bg-color-4{background-image: linear-gradient(90deg, #f2a7ca 0%, #c289f4 100%);}
+span.bg-color-5{background-image: linear-gradient(90deg, #ffc187 0%, #fe93a7 100%);}
+span.bg-color-6{background-image: linear-gradient(90deg, #a1ecff 0%, #7dbcff 100%);}
+.service-grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--size-20);
 
+}

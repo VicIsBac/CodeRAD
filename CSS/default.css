@@ -7,7 +7,7 @@
   --font-color-link: #57a6ff;
   --footer: #34314b;
   --footer-base: #2e2b45;
-  --contrast: var(--font-color-light);
+  --contrast: rgba(246,248,249,0.8);
   --success: #54ecf5;
   --danger: #ff8b8d;
   --grad-1: #a1ecff;
