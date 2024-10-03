@@ -26,8 +26,7 @@
   transition: ease-in-out 0.3s;
   color: var(--white);
 }
-.bg-header{
-  background-image: url("../CodeRad-assets/bg-header-1.jpg");
+.bg-header, .video-demo{
   background-color: var(--footer);
   background-repeat: no-repeat;
   background-size: cover;
@@ -36,6 +35,13 @@
   z-index: 1;
   padding: 4.6875rem 0;
 }
+.bg-header{
+  background-image: url("../CodeRad-assets/bg-header-1.jpg");
+}
+.video-demo{
+  background-image: url("../CodeRad-assets/bg-demo.jpg");
+}
+
 .bg-header::before{
   background-image: linear-gradient(
     30deg,
@@ -120,5 +126,32 @@ span.bg-color-6{background-image: linear-gradient(90deg, #a1ecff 0%, #7dbcff 100
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: var(--size-20);
-
+}
+.video-demo{
+  text-align: center;
+}
+.video-demo .block-text{
+  padding-right: 0;
+}
+.video-demo .block-text h2, 
+.video-demo .block-text p{
+  color: var(--white);
+}
+.video-box{
+  position: relative;
+  margin-bottom: -9.375rem;
+  z-index: 100;
+}
+.video-box > img{
+  max-width: 600px;
+  border-radius: 8px;
+}
+.video-btn img{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: var(--size-100);
+  height: var(--size-100);
+  box-shadow: 0 10px 20px rgba(57, 166, 251, 0.3);
 }
