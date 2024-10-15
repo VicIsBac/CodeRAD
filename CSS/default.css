@@ -97,9 +97,14 @@ img{
   padding: 0.475rem 1.75rem;
   box-shadow: 0px 10px 20px rgba(255, 255, 255, 0.35);
 }
+@media(min-width:768px){
+  .pricing-table, .testimonial-grid, .footer-bottom-wrapper{max-width: 720px;}
+}
+@media(min-width: 992px){
+  footer .container{
+    max-width: 960px;
+  }
+}
 @media(min-width:1200px){
   .container{max-width: 1140px;}
-}
-@media(min-width:768px){
-  .pricing-table, .testimonial-grid, .footer-bottom{max-width: 720px;}
 }
