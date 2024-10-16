@@ -362,3 +362,65 @@ footer .footer-top{
 .copyright{
   color: var(--font-color-light);
 }
+#scrollup{
+  background-color: transparent;
+  background-image: linear-gradient(90deg, #9ccdfe 0%, #94aafd 100%);
+  color: var(--white);
+  font-size: var(--size-20);
+  height: var(--size-50);
+  width: var(--size-50);
+  line-height: var(--size-50);
+  position: fixed;
+  bottom: var(--size-30);
+  right: var(--size-30);
+  text-align: center;
+  border-radius: 8px;
+  cursor: pointer;
+  z-index: 100;
+}
+.footer-card{
+  display: flex;
+  background-color: var(--font-color-link);
+  width: 60%;
+  max-height: 70px;
+  position: fixed;
+  bottom: 0;
+  padding-bottom: 30px;
+  left: 20%;
+  z-index: 200;
+  overflow: hidden;
+}
+.inner-card h5{
+  font-weight: 700;
+  font-size: var(--size-13);
+  color: var(--white);
+  margin-bottom: var(--size-13);
+}
+.inner-card p{
+  color: var(--white);
+  font-weight: 100;
+  font-size: var(--size-10);
+}
+.btn.btn-f-card{
+  background-color: white;
+  width: 5rem;
+  height: 1.875rem;
+  border-radius: 5px;
+  font-weight: 600;
+  margin-top: 1.875rem;
+  margin-left: 23.125rem;
+  padding: 8px 8px;
+  text-align: center;
+}
+.card-img img{
+  width: 150px;
+  max-width: 200px;
+  vertical-align: middle;
+  border-style: none;
+  object-fit: cover;
+  overflow: hidden;
+  rotate: 20deg;
+  margin-right: 50px;
+  margin-top: -28px;
+  margin-left: 20px;
+}
