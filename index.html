@@ -17,7 +17,7 @@
 </head>
 <body>
   <div id="pagetop"></div>
-  <nav class="navbar nav">
+  <nav id="topNav" class="navbar nav">
     <div class="container">
       <button class="navbar-toggler" aria-expanded="false" aria-controls="navbardropdown">
         <span>&#9776;</span>
@@ -127,23 +127,23 @@
         <ul>
           <li>
             <span class="title">Community Support</span>
-            <span class="icon">&#10003</span>
+            <span class="icon"><i class="fa-solid fa-check"></i></span>
           </li>
           <li>
             <span class="title">Flexible Single License</span>
-            <span class="icon">&#10003</span>
+            <span class="icon"><i class="fa-solid fa-check"></i></span>
           </li>
           <li>
             <span class="title">100+ Styled Components</span>
-            <span class="icon">&#10761</span>
+            <span class="icon"><i class="fa-solid fa-x"></i></span>
           </li>
           <li>
             <span class="title">100+ Header Variations</span>
-            <span class="icon">&#10761</span>
+            <span class="icon"><i class="fa-solid fa-x"></i></span>
           </li>
           <li>
             <span class="title">Speedy Tool Building</span>
-            <span class="icon">&#10761</span>
+            <span class="icon"><i class="fa-solid fa-x"></i></span>
           </li>
         </ul>
       </div>
@@ -155,26 +155,28 @@
         <ul>
           <li>
             <span class="title">Community Support</span>
-            <span class="icon checked">&#10003</span>
+            <span class="icon checked"><i class="fa-solid fa-check"></i></span>
           </li>
           <li>
             <span class="title">Flexible Single License</span>
-            <span class="icon checked">&#10003</span>
+            <span class="icon checked"><i class="fa-solid fa-check"></i></span>
           </li>
           <li>
             <span class="title">100+ Styled Components</span>
-            <span class="icon checked">&#10003</span>
+            <span class="icon checked"><i class="fa-solid fa-check"></i></span>
           </li>
           <li>
             <span class="title">100+ Header Variations</span>
-            <span class="icon times">&#10761</span>
+            <span class="icon times"><i class="fa-solid fa-x"></i></span>
           </li>
           <li>
             <span class="title">Speedy Tool Building</span>
-            <span class="icon times">&#10761</span>
+            <span class="icon times"><i class="fa-solid fa-x"></i></span>
           </li>
-          <a href="" class="btn btn-primary">Learn More</a>
-        </ul>
+        </ul>          
+      <div class="plan-btn-wrapper">
+        <a href="" class="btn btn-primary">Get Started</a>
+      </div>
       </div>
       <div class="price-card">
         <h3>Enterprise</h3>
@@ -184,26 +186,24 @@
         <ul>
           <li>
             <span class="title">Community Support</span>
-            <span class="icon">&#10003</span>
+            <span class="icon"><i class="fa-solid fa-check"></i></span>
           </li>
           <li>
             <span class="title">Flexible Single License</span>
-            <span class="icon">&#10003</span>
+            <span class="icon"><i class="fa-solid fa-check"></i></span>
           </li>
           <li>
             <span class="title">100+ Styled Components</span>
-            <span class="icon">&#10003</span>
+            <span class="icon"><i class="fa-solid fa-check"></i></span>
           </li>
           <li>
             <span class="title">100+ Header Variations</span>
-            <span class="icon">&#10003</span>
+            <span class="icon"><i class="fa-solid fa-check"></i></span>
           </li>
           <li>
             <span class="title">Speedy Tool Building</span>
-            <span class="icon">&#10003</span>
+            <span class="icon"><i class="fa-solid fa-check"></i></span>
           </li>
-          <div class="plan-btn-wrapper">
-          </div>
         </ul>
       </div>
     </div>
@@ -280,15 +280,15 @@
           <h5>Services</h5>
           <div class="services-wrapper">
             <h5>Mobile Apps</h5>
-            <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Vitae aptent mauris potenti tincidunt</p>
+            <p>Lorem ipsum odor amet, consectetuer adipiscing elit.</p>
           </div>          
           <div class="services-wrapper">
             <h5>Brand Identity</h5>
-            <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Vitae aptent mauris potenti tincidunt</p>
+            <p>Lorem ipsum odor amet, consectetuer adipiscing elit.</p>
           </div>          
           <div class="services-wrapper">
             <h5>Social Media</h5>
-            <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Vitae aptent mauris potenti tincidunt</p>
+            <p>Lorem ipsum odor amet, consectetuer adipiscing elit.</p>
           </div>
         </div>
         <div class="footer-col posts">
@@ -343,5 +343,22 @@
     </div>
   </div>
   <a id="scrollup" href="#pagetop"><i class="fa-solid fa-arrow-up"></i></a>
+  <script>
+    const nav = document.getElementById("topNav")
+    window.onscroll = function () {
+    if (window.pageYOffset > 100){
+    nav.classList.add("sticky");
+    } else {
+      nav.classList.remove("sticky")
+    }
+  }
+
+    const navButton =document.querySelector('button[aria-expanded]');
+    function toggleNav({target}){
+      const expanded =target.getAttribute('aria-expanded') === 'true' || false;
+      navButton.setAttribute('aria-expanded', !expanded);
+    }
+    navButton.addEventListener('click', toggleNav);
+  </script>
 </body>
 </html>
