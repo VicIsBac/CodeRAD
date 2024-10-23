@@ -25,4 +25,34 @@
         margin-right: var(--size-20);
         color: var(--font-color-dark);
     }
+    footer .footer-col:nth-child(3){
+        grid-column: 1 / 3;
+    }
+}
+@media screen and (max-width: 480px) {
+    .navbar-toggler{
+        padding-right: var(--size-30);
+    }
+    .bg-header{
+        width: 520px;
+    }
+    .hero-wrapper{
+        text-align: center;
+    }
+    .why-me-wrapper{
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    .why-me-wrapper .blocktext{
+        padding-right: 0;
+    }
+    .why-me-wrapper > div{
+        flex: initial;
+    }
+    footer .footer-col:nth-child(1){
+        order: 3;
+    }
+    footer .footer-col:nth-child(3){
+        grid-column: initial;
+    }
 }
